@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  max-width: 1050px;
+  margin: auto;
+  position: relative;
+  inset: 0;
+}
+
+.liner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: salmon;
+  animation: circle-rotate 13s linear infinite, rotateY-animation 3s linear infinite;
+}
+
+@keyframes rotateY-animation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
